@@ -18,6 +18,8 @@
 		7119E2D019BBECA400E102FF /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119E2CF19BBECA400E102FF /* ComposeViewController.swift */; };
 		717804F419BCF0ED003852F8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717804F319BCF0ED003852F8 /* AccountViewController.swift */; };
 		717804F719BCF13F003852F8 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717804F619BCF13F003852F8 /* TrendingViewController.swift */; };
+		717804F919BD1758003852F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717804F819BD1758003852F8 /* LoginViewController.swift */; };
+		717804FC19BD1927003852F8 /* LoginSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717804FB19BD1927003852F8 /* LoginSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		7119E2CF19BBECA400E102FF /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		717804F319BCF0ED003852F8 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		717804F619BCF13F003852F8 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		717804F819BD1758003852F8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		717804FB19BD1927003852F8 /* LoginSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		7119E2A819BBE48B00E102FF /* Tumblr-Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				717804FA19BD1912003852F8 /* Segues */,
 				7119E2C819BBE7FB00E102FF /* View Controllers */,
 				7119E2AB19BBE48B00E102FF /* AppDelegate.swift */,
 				7119E2AD19BBE48B00E102FF /* ViewController.swift */,
@@ -131,8 +136,17 @@
 				7119E2CF19BBECA400E102FF /* ComposeViewController.swift */,
 				717804F319BCF0ED003852F8 /* AccountViewController.swift */,
 				717804F619BCF13F003852F8 /* TrendingViewController.swift */,
+				717804F819BD1758003852F8 /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		717804FA19BD1912003852F8 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				717804FB19BD1927003852F8 /* LoginSegue.swift */,
+			);
+			name = Segues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,12 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717804F919BD1758003852F8 /* LoginViewController.swift in Sources */,
 				7119E2CE19BBEBFA00E102FF /* SearchViewController.swift in Sources */,
 				717804F719BCF13F003852F8 /* TrendingViewController.swift in Sources */,
 				7119E2AE19BBE48B00E102FF /* ViewController.swift in Sources */,
 				717804F419BCF0ED003852F8 /* AccountViewController.swift in Sources */,
 				7119E2CA19BBE80800E102FF /* TabBarViewController.swift in Sources */,
 				7119E2D019BBECA400E102FF /* ComposeViewController.swift in Sources */,
+				717804FC19BD1927003852F8 /* LoginSegue.swift in Sources */,
 				7119E2AC19BBE48B00E102FF /* AppDelegate.swift in Sources */,
 				7119E2CC19BBE8C200E102FF /* HomeViewController.swift in Sources */,
 			);

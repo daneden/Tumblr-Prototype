@@ -24,6 +24,8 @@ class AccountViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        storyboard
+        
         // Do any additional setup after loading the view.
     }
 
@@ -33,14 +35,18 @@ class AccountViewController: ViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        var destinationVC = segue.destinationViewController as LoginViewController
+        
+        destinationVC.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        var transition = LoginSegue()
+        transition.duration = 0.4
+        
+        destinationVC.transitioningDelegate = transition
     }
-    */
 
 }

@@ -43,7 +43,7 @@ class TabBarViewController: ViewController {
         homeTab.selected = true
         
         UIView.animateWithDuration(1, delay: 0, options: UIViewAnimationOptions.Autoreverse | UIViewAnimationOptions.Repeat, animations: {
-            self.exploreHint.transform = CGAffineTransformMakeTranslation(0, -10)
+            self.exploreHint.transform = CGAffineTransformMakeTranslation(0, -5)
         }, completion: nil)
     }
 
