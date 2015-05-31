@@ -35,8 +35,8 @@ class HomeViewController: ViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        var destinationVC = segue.destinationViewController as LoginViewController
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        var destinationVC = segue.destinationViewController as! LoginViewController
     
         destinationVC.modalPresentationStyle = UIModalPresentationStyle.Custom
     

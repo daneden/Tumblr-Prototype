@@ -30,11 +30,11 @@ class TabBarViewController: ViewController {
         
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        homeView = storyboard.instantiateViewControllerWithIdentifier("HomeView") as HomeViewController
-        composeView = storyboard.instantiateViewControllerWithIdentifier("ComposeView") as ComposeViewController
-        searchView = storyboard.instantiateViewControllerWithIdentifier("SearchView") as SearchViewController
-        accountView = storyboard.instantiateViewControllerWithIdentifier("AccountView") as AccountViewController
-        trendingView = storyboard.instantiateViewControllerWithIdentifier("TrendingView") as TrendingViewController
+        homeView = storyboard.instantiateViewControllerWithIdentifier("HomeView") as! HomeViewController
+        composeView = storyboard.instantiateViewControllerWithIdentifier("ComposeView")as! ComposeViewController
+        searchView = storyboard.instantiateViewControllerWithIdentifier("SearchView") as! SearchViewController
+        accountView = storyboard.instantiateViewControllerWithIdentifier("AccountView") as! AccountViewController
+        trendingView = storyboard.instantiateViewControllerWithIdentifier("TrendingView")as! TrendingViewController
         
         homeView.view.frame = contentView.frame
 

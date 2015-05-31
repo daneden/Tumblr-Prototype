@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         case Modal
     }
     
-    let presentationMode = ViewPresentation.Normal
+    var presentationMode = ViewPresentation.Normal
     
     override func viewDidLoad() {
         super.viewDidLoad()
